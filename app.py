@@ -22,7 +22,7 @@ if selected_algorithm != 'Pilih Algoritma':
 
     if selected_algorithm == 'Support Vector Machine (SVM)':
         st.write("Implementasi Support Vector Machine (SVM)")
-        st.image('header_image.png', caption='Support Vector Machine (SVM)', use_column_width=True)
+        st.image('header_image.png', caption='Support Vector Machine (SVM)', use_container_width=True)
 
         try:
             svm_model = pickle.load(open('svm_model.sav', 'rb'))
@@ -55,7 +55,7 @@ if selected_algorithm != 'Pilih Algoritma':
 
     elif selected_algorithm == 'Logistic Regression (LR)':
         st.write("Implementasi Logistic Regression (LR)")
-        st.image('header_image.png', caption='Logistic Regression (LR)', use_column_width=True)
+        st.image('header_image.png', caption='Logistic Regression (LR)', use_container_width=True)
         
         lr_model = LogisticRegression (max_iter=1000)
         lr_model.fit(X_train, y_train)
